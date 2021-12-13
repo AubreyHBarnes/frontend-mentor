@@ -100,18 +100,51 @@ html {
     display: none;
   }
 
-  .hero-wrapper {
-      width: 100%;
-      height: 100vh;
-      background: url('../images/mobile/image-header.jpg') no-repeat center / cover;
-  }
-
   .nav-item.contact {
     background: var(--yellow);
     border-radius: 2rem;
     font-family: var(--font-family-fraunces);
     text-transform: uppercase;
   }
+
+  /* hero section */
+
+  .hero-wrapper {
+    width: 100%;
+    height: 100vh;
+    background: url('../images/mobile/image-header.jpg') no-repeat center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-wrapper h1 {
+    color: var(--white);
+    font-family: var(--font-family-fraunces);
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3rem;
+
+}
+
+/* content section */
+section.testimonials {
+    text-align: center;
+}
+.content-headers {
+    font-family: var(--font-family-fraunces);
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.content-copy {
+    font-family: var(--font-family-barlow);
+    padding: 1rem;
+}
 
   @media (max-width: 768px) {
     /* hide nav-items on mobile */
