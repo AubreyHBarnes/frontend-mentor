@@ -131,19 +131,55 @@ html {
 }
 
 /* content section */
-section.testimonials {
+p[class$="copy"] {
     text-align: center;
 }
+
+.transform-copy {
+    padding: 0 3rem;
+}
+
 .content-headers {
     font-family: var(--font-family-fraunces);
     font-size: 2.5rem;
     text-align: center;
-    margin: 3rem 0;
+    margin: 3rem 0 1.25rem 0;   
 }
 
 .content-copy {
     font-family: var(--font-family-barlow);
+    line-height: 1.7;
     padding: 1rem;
+}
+
+a[class$="link"] {
+    font-family: var(--font-family-fraunces);
+    text-transform: uppercase;
+    display: block;
+    margin: 2rem 0;
+    position: relative;
+    text-align: center;
+}
+
+a[class$="link"]:after {
+    content: '';
+    
+    width: 150px;
+    position: absolute;
+    left: 50%;
+    top: 11px;
+    transform: translatex(-50%);
+    z-index: -1;
+    border-radius: 20%;
+    opacity: 25%;
+}
+
+.learn-link:after {
+    border-bottom: 0.75rem solid var(--yellow);
+}
+
+.stand-out-link:after {
+    border-bottom: 0.75rem solid var(--grayish-blue);
 }
 
   @media (max-width: 768px) {
