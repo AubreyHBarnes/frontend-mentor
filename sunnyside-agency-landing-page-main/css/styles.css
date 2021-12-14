@@ -62,7 +62,7 @@ html {
     font-size: 1rem;
     color: var(--white);
     width: 100vw;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 5;
     /* background: var(--white); */
@@ -223,6 +223,41 @@ h4.testi-title {
     font-size: 1rem;
     font-family: 'Barlow';
     color: gray;
+}
+
+.footer-img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+footer {
+    background: #8FD4C5;
+    color: var(--dk-desat-cyan);
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer-title {
+    font-family: var(--font-family-barlow);
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.footer-nav {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 25rem;
+    font-family: var(--font-family-barlow);
+    margin-bottom: 4.5rem;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 14rem;
+    margin: 1rem auto;
 }
 
   @media (max-width: 768px) {
