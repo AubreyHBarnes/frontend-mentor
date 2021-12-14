@@ -131,12 +131,11 @@ html {
 }
 
 /* content section */
+div[class$="copy"] {
+    padding: 0 3rem;
+}
 p[class$="copy"] {
     text-align: center;
-}
-
-.transform-copy {
-    padding: 0 3rem;
 }
 
 .content-headers {
@@ -180,6 +179,50 @@ a[class$="link"]:after {
 
 .stand-out-link:after {
     border-bottom: 0.75rem solid var(--grayish-blue);
+}
+
+.design-container, .photo-container {
+    position: relative;
+}
+
+.dzn-copy, .photo-copy {
+    position: absolute;
+    bottom: 3rem;
+}
+
+section.testimonials {
+    padding: 3rem 2rem;
+}
+
+h4.testi-title {
+    text-transform: uppercase;
+    font-family: 'Fraunces';
+    color: var(--grayish-blue);
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 4px;
+    margin: 3rem;
+}
+
+.single-test img {
+    border-radius: 50%;
+}
+
+.single-test {
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+
+.test-name {
+    font-family: var(--font-family-fraunces);
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+
+.test-job {
+    font-size: 1rem;
+    font-family: 'Barlow';
+    color: gray;
 }
 
   @media (max-width: 768px) {
