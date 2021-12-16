@@ -366,6 +366,40 @@ footer {
         left: 0;
         transform: translateX(0);
     }
+
+    .testimonials-wrapper {
+        display: flex;
+    }
+
+    .testimonials-wrapper > div {
+        padding: 0 0.8rem;
+    }
+
+    .single-test p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+
+    .footer-img-container > div{
+        width: 100%;
+        padding-top: var(--mobile-ratio);    
+    }
+
+    .milk {
+        background: url('../images/desktop/image-gallery-milkbottles.jpg') no-repeat center / cover;
+    }
+
+    .orange {
+        background: url('../images/desktop/image-gallery-orange.jpg') no-repeat center / cover;
+    }
+
+    .cone {
+        background: url('../images/desktop/image-gallery-cone.jpg') no-repeat center / cover;
+    }
+
+    .sugar {
+        background: url('../images/desktop/image-gallery-sugarcubes.jpg') no-repeat center / cover;
+    }
 }
 
   @media (max-width: 679px) {
