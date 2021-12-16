@@ -216,20 +216,28 @@ a[class$="link"]:after {
 }
 
 .design-container, .photo-container {
+    padding-top: 160%;
     position: relative;
+}
+
+.design-container {
+    background: url('../images/mobile/image-graphic-design.jpg') no-repeat center / cover;
+    width: 100%;
+}
+
+.photo-container {
+    background: url('../images/mobile/image-photography.jpg') no-repeat center / cover;
+    width: 100%;
 }
 
 .dzn-copy, .photo-copy {
     position: absolute;
-    bottom: 3rem;
+    bottom: 6rem;
+    padding: 0 2rem;
 }
 
 section.testimonials {
     padding: 3rem 2rem;
-}
-
-.dzn-photo-flex {
-
 }
 
 h4.testi-title {
@@ -263,6 +271,27 @@ h4.testi-title {
     color: gray;
 }
 
+.footer-img-container > div{
+    width: 100%;
+    padding-top: var(--mobile-ratio);    
+}
+
+.milk {
+    background: url('../images/mobile/image-gallery-milkbottles.jpg') no-repeat center / cover;
+}
+
+.orange {
+    background: url('../images/mobile/image-gallery-orange.jpg') no-repeat center / cover;
+}
+
+.cone {
+    background: url('../images/mobile/image-gallery-cone.jpg') no-repeat center / cover;
+}
+
+.sugar {
+    background: url('../images/mobile/image-gallery-sugar-cubes.jpg') no-repeat center / cover;
+}
+
 .footer-img-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -283,7 +312,7 @@ footer {
 }
 
 .footer-nav {
-    margin: 2rem 0;
+    margin: 2rem auto;
     display: flex;
     justify-content: space-evenly;
     max-width: 25rem;
@@ -320,8 +349,28 @@ footer {
         font-size: 1.75em;
     }
 
-    .transform-copy, .stand-out-copy {
+    .transform-copy, .stand-out-copy,
+    .design-container, .photo-container {
         padding-top: var(--desktop-ratio);
+    }
+
+    /* .design-container, .photo-container {
+        padding-top: 160%;
+        position: relative;
+    } */
+
+    .design-container {
+        background: url('../images/desktop/image-graphic-design.jpg') no-repeat center / cover;
+        width: 100%;
+    }
+
+    .photo-container {
+        background: url('../images/desktop/image-photography.jpg') no-repeat center / cover;
+    }
+
+    .dzn-copy, .photo-copy {
+        bottom: 1.5rem;
+        padding: 0 2rem;
     }
 
     .content-copy {
@@ -380,9 +429,13 @@ footer {
         line-height: 1.4;
     }
 
+    .footer-img-container {
+        display: flex;
+    }
+
     .footer-img-container > div{
         width: 100%;
-        padding-top: var(--mobile-ratio);    
+        padding-top: var(--desktop-ratio);    
     }
 
     .milk {
@@ -492,7 +545,7 @@ footer {
   }
 }
 
-@media screen (min-width: 1100px) {
+@media screen and (min-width: 1100px) {
     .content-headers {
         font-size: 3rem;
         font-weight: 900;
